@@ -15,9 +15,9 @@
   "author": "Rainspistols",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Rainspistols/BarbershopV2/issues"
+    "url": "https://byteserker.com"
   },
-  "homepage": "https://github.com/Rainspistols/BarbershopV2#readme",
+  "homepage": "https://byteserker.com",
   "devDependencies": {
     "autoprefixer": "^9.6.0",
     "browser-sync": "^2.26.7",
