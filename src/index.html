@@ -6,5 +6,172 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link">Main</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Photo and video</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Review</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Byteserker</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link logo">
+              ​<picture>
+                <source
+                  srcset="logotype-desktop.svg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="logotype-tablet.svg"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  class="logo__img"
+                  src="logotype-mobile.svg"
+                  alt="logotype"
+                />
+              </picture>
+            </a>
+            <div class="sandwitch">
+              <div class="sandwitch__item1"></div>
+              <div class="sandwitch__item2"></div>
+              <div class="sandwitch__item3"></div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <h1 class="visually-hidden">Welcome to Sedona</h1>
+      <div class="welcome-block">
+        <img
+          src="back-mobile.jpg"
+          alt="background"
+          class="welcome-block__bg-img"
+        />
+        <img
+          src="text-index.svg"
+          alt="welcome to Sedona"
+          class="welcome-block__text-img"
+        />
+      </div>
+      <article class="why-sedona">
+        <div class="why-sedona__intro">
+          <h2 class="why-sedona__title">
+            SEDONA - small town in ARIZON, deserving of more!
+          </h2>
+          <p class="why-sedona__description">
+            Consider 5 reasons why Sedona is cooler than the Grand Canyon!
+          </p>
+        </div>
+        <ul class="reasons">
+          <li class="reason">
+            <p class="reason__title">REAL TOWN</p>
+            <p class="reason__number">— №1 —</p>
+            <p class="reason__description">
+              SEDONA IS NOT ATTRACTION FOR TOURISTS, THERE IS LIFE OF ITS LIFE
+            </p>
+            <img src="photo-city@1x.jpg" alt="photo-city" class="reason__img" />
+            <section class="benefits">
+              <ul class="benefits__list">
+                <li class="benefits__item">
+                  <p class="benefits__title">Housing</p>
+                  <p class="benefist__description">
+                    We recommend living in a real motel, just like in a movie!
+                  </p>
+                </li>
+                <li class="benefits__item">
+                  <p class="benefits__title">SOUVENIRS</p>
+                  <p class="benefist__description">
+                    Not only Chinese, but also locally produced!
+                  </p>
+                </li>
+                <li class="benefits__item">
+                  <p class="benefits__title">Food</p>
+                  <p class="benefist__description">
+                    Always order a FIRM BURGER, you will NOT be disappointed!
+                  </p>
+                </li>
+              </ul>
+            </section>
+          </li>
+          <li class="reason">
+            <p class="reason__title">THERE IS A Devil's Bridge</p>
+            <p class="reason__number">— №2 —</p>
+            <p class="reason__description">
+              Yes, you can go through it! If you dare, of course
+            </p>
+            <img
+              src="photo-bridge@1x.jpg"
+              alt="photo-city"
+              class="reason__img"
+            />
+          </li>
+          <li class="reason reason--black">
+            <p class="reason__title">SMALL AREA</p>
+            <p class="reason__number">— №3 —</p>
+            <p class="reason__description">
+              ALL interesting places are very close
+            </p>
+          </li>
+          <li class="reason reason--black">
+            <p class="reason__title">BEAUTIFUL ROAD</p>
+            <p class="reason__number">— №4 —</p>
+            <p class="reason__description">
+              GO TO SEDONA FROM LAS VEGAS NOT BORING AT ALL!
+            </p>
+          </li>
+          <li class="reason reason--black">
+            <p class="reason__title">FEW TOURISTS</p>
+            <p class="reason__number">— №5 —</p>
+            <p class="reason__description">
+              Most rides in the Grand Canyon and crowds there
+            </p>
+          </li>
+        </ul>
+      </article>
+      <section class="find-a-hotel">
+        <p class="find-a-hotel__title">INTERESTED IN?</p>
+        <p class="find-a-hotel__description">
+          Indicate your expected dates of travel and we will show you the best
+          hotel deals in Sedona
+        </p>
+        <a href="#" class="button find-a-hotel__button"> FIND a hotel</a>
+      </section>
+      <section class="map"></section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__title">#visitSEDONA</p>
+      <ul class="footer__socials socials">
+        <li class="socials__item">
+          <img src="icon-twitter.svg" alt="icon-twitter" class="socials__img" />
+        </li>
+        <li class="socials__item">
+          <img
+            src="icon-facebook.svg"
+            alt="icon-facebook"
+            class="socials__img"
+          />
+        </li>
+        <li class="socials__item">
+          <img src="icon-youtube.svg" alt="icon-youtube" class="socials__img" />
+        </li>
+      </ul>
+      <div class="designed">
+        <p class="designed__text">Designed by</p>
+        <a href="Byteserker.com" class="designed__link"
+          ><img src="byteserker.svg" alt="byteserker-logo" class="designed__img"
+        /></a>
+      </div>
+    </footer>
+  </body>
 </html>
