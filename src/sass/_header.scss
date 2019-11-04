@@ -1,0 +1,72 @@
+.main-nav {
+  @extend %font-PT--700;
+  &__list {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  &__item {
+    background: $blue;
+    text-transform: uppercase;
+    @extend %font-size--18-26;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid $blueDarker;
+    border-top: 1px solid $blueLighter;
+    cursor: pointer;
+    color: $white;
+    @include transition--03(all);
+    display: none;
+    &:nth-child(4) {
+      border-bottom: none;
+    }
+    &:hover,
+    &:focus {
+      background: $blueHover;
+    }
+    &:active {
+      background: $blueActive;
+      color: rgba($color: white, $alpha: 0.3);
+    }
+  }
+  &__link {
+    color: inherit;
+    outline: none;
+  }
+  .logo {
+    background: $white;
+    height: 55px;
+    box-shadow: 0 -3px 5px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+    &__sandwitch {
+      position: absolute;
+      top: 17px;
+      right: 20px;
+    }
+  }
+  .sandwitch {
+    width: 23px;
+    height: 21px;
+    background: transparent;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    cursor: pointer;
+    div {
+      width: 23px;
+      height: 4px;
+      background: $blue;
+      @include transition--03(opacity);
+    }
+    &:hover div,
+    &:focus div{
+      opacity: 0.7;
+    }
+    &:active div {
+      opacity: 0.3;
+    }
+  }
+}

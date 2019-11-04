@@ -3,14 +3,34 @@ $tablet: 768px;
 $tablet-only: 1199px;
 $desktop: 1200px;
 
-@import "fonts";
-@import "colors";
-@import "other";
+@import 'fonts';
+@import 'colors';
+@import 'other';
+@import 'header';
+@import 'main';
+@import 'button';
+@import 'footer';
 
 body {
   margin: 0;
   padding: 0;
   min-width: 320px;
+  @extend %font-PT--400;
+  font-size: 14px;
+  color: $grey;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
@@ -23,4 +43,3 @@ body {
   width: 1px !important;
   overflow: hidden;
 }
-
