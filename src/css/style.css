@@ -21,13 +21,14 @@ body {
 .main-nav__list {
   margin: 0;
   padding: 0;
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap; }
 
 .main-nav__item {
   background: #81b3d2;
   text-transform: uppercase;
   height: 55px;
-  display: flex;
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid #678fa8;
@@ -35,7 +36,7 @@ body {
   cursor: pointer;
   color: white;
   transition: all 0.3s ease-out;
-  display: none; }
+  display: flex; }
   .main-nav__item:nth-child(4) {
     border-bottom: none; }
   .main-nav__item:hover, .main-nav__item:focus {
@@ -77,6 +78,32 @@ body {
     opacity: 0.7; }
   .main-nav .sandwitch:active div {
     opacity: 0.3; }
+
+@media (min-width: 768px) {
+  .main-nav__list {
+    flex-flow: row nowrap; }
+  .main-nav__item {
+    border: none;
+    background: white;
+    color: black;
+    font-size: 14px;
+    padding: 0 25px;
+    white-space: nowrap;
+    box-sizing: border-box; }
+  .main-nav__item3 {
+    order: 4; }
+  .main-nav__item4 {
+    order: 5; }
+  .main-nav .logo {
+    order: 3;
+    padding: 0 25px;
+    box-shadow: none;
+    display: flex;
+    width: 102px; }
+    .main-nav .logo__link {
+      width: 100%; }
+  .main-nav .sandwitch {
+    display: none; } }
 
 .main .welcome-block {
   position: relative;
