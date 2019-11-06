@@ -52,9 +52,32 @@
     }
     &__link {
       text-transform: uppercase;
-      color: #f90d3e;
+      color: $black;
       @extend %font-PT--700;
       @extend %font-size--21-26;
+    }
+  }
+}
+
+@media (min-width:$tablet) {
+  .footer {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 36px 7.8%;
+    justify-content: space-between;
+    align-items: center;
+    &__title {
+      font-size: 21px;
+      margin: 0;
+    }
+    .socials {
+      margin: 0;
+    }
+    .designed {
+      margin: 0;
+      &__text {
+        margin: inherit;
+      }
     }
   }
 }

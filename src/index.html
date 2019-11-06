@@ -22,7 +22,7 @@
             <a href="#" class="main-nav__link">Photo and video</a>
           </li>
           <li class="main-nav__item main-nav__item3">
-            <a href="#" class="main-nav__link">Review</a>
+            <a href="#" class="main-nav__link">Feedback form</a>
           </li>
           <li class="main-nav__item main-nav__item4">
             <a href="#" class="main-nav__link">Byteserker</a>
@@ -57,11 +57,14 @@
     <main class="main">
       <h1 class="visually-hidden">Welcome to Sedona</h1>
       <div class="welcome-block">
-        <img
-          src="img/back-mobile.jpg"
-          alt="background"
-          class="welcome-block__bg-img"
-        />
+        <picture>
+          <source srcset="img/back-desktop.jpg" media="(min-width: 768px)" />
+          <img
+            src="img/back-mobile.jpg"
+            alt="background"
+            class="welcome-block__bg-img"
+          />
+        </picture>
         <img
           src="img/text-index.svg"
           alt="welcome to Sedona"
@@ -95,20 +98,20 @@
             <section class="sub-reason">
               <h3 class="visually-hidden">Why is it worth going to Sedona?</h3>
               <ul class="sub-reason__list">
-                <li class="sub-reason__item">
-                  <p class="sub-reason__title sub-reason__title1">Housing</p>
+                <li class="sub-reason__item sub-reason__item1">
+                  <p class="sub-reason__title">Housing</p>
                   <p class="sub-reason__description">
                     We recommend living in a real motel, just like in a movie!
                   </p>
                 </li>
-                <li class="sub-reason__item">
-                  <p class="sub-reason__title sub-reason__title2">SOUVENIRS</p>
+                <li class="sub-reason__item sub-reason__item2">
+                  <p class="sub-reason__title">SOUVENIRS</p>
                   <p class="sub-reason__description">
                     Not only Chinese, but also locally produced!
                   </p>
                 </li>
-                <li class="sub-reason__item">
-                  <p class="sub-reason__title sub-reason__title3">Food</p>
+                <li class="sub-reason__item sub-reason__item3">
+                  <p class="sub-reason__title">Food</p>
                   <p class="sub-reason__description">
                     Always order a FIRM BURGER, you will NOT be disappointed!
                   </p>
@@ -116,7 +119,7 @@
               </ul>
             </section>
           </li>
-          <li class="reason">
+          <li class="reason reason--even">
             <div class="reason__intro reason__intro--square">
               <p class="reason__title">THERE IS A Devil's Bridge</p>
               <p class="reason__number">— №2 —</p>
@@ -134,7 +137,7 @@
             <p class="reason__title">SMALL AREA</p>
             <p class="reason__number">— №3 —</p>
             <p class="reason__description">
-              ALL interesting places are very close
+              ALL interesting places are very close. Really close!
             </p>
           </li>
           <li class="reason reason--black">
