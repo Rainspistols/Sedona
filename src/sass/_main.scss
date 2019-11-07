@@ -1,17 +1,22 @@
 .main {
+  background-color: $white;
   .welcome-block {
     position: relative;
     margin: 0 0 30px;
-    &__bg-img {
-      clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
-      width: 100%;
-    }
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+    background-image: url('../img/back-mobile.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 389px;
+    background-color: #ac707c;
     &__text-img {
       position: absolute;
       z-index: 2;
-      left: calc(50% - 44%);
-      top: calc(50% - 33.4%);
-      width: 88%;
+      left: calc(50% - 141px);
+      top: calc(50% - 107px);
+      width: 282px;
+      height: 214px;
     }
   }
   .what-sedona {
@@ -37,6 +42,10 @@
     padding: 0;
     margin: 0;
     .reason {
+      &__intro-and-img {
+        display: flex;
+        flex-flow: row wrap;
+      }
       &__intro {
         @extend %inner-padd--6;
         color: $white;
@@ -44,10 +53,21 @@
         padding-top: 60px;
         clip-path: polygon(0 0, 50% 10%, 100% 0, 100% 100%, 0 100%);
         text-align: center;
+        width: 100%;
       }
       &__img {
+        background-size: cover;
+        height: 260px;
         width: 100%;
-        display: block;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #818979;
+      }
+      &__img1 {
+        background-image: url('../img/photo-city@1x.jpg');
+      }
+      &__img2 {
+        background-image: url('../img/photo-bridge@1x.jpg');
       }
       &__intro--square {
         clip-path: none;
@@ -161,25 +181,25 @@
 @media (min-width: $tablet) {
   .main {
     .welcome-block {
-      height: 67.45%;
+      height: 518px;
       margin-bottom: 55px;
-      &__bg-img {
-        clip-path: polygon(
-          4% 93%,
-          0 92%,
-          0 0,
-          100% 0,
-          100% 92%,
-          96% 93%,
-          96% 89%,
-          50% 100%,
-          4% 89%
-        );
-      }
+      clip-path: polygon(
+        4% 93%,
+        0 92%,
+        0 0,
+        100% 0,
+        100% 92%,
+        96% 93%,
+        96% 89%,
+        50% 100%,
+        4% 89%
+      );
+      background-image: url('../img/back-desktop.jpg');
       &__text-img {
-        width: 60%;
-        left: calc(50% - 30%);
-        top: 10%;
+        width: 460px;
+        height: 350px;
+        left: calc(50% - 230px);
+        top: calc(50% - 180px);
       }
     }
     .what-sedona {
@@ -196,16 +216,28 @@
       .reason {
         display: flex;
         flex-flow: row wrap;
+        width: 100%;
+        &__intro-and-img {
+          width: 100%;
+        }
         &__intro {
           width: 33.333%;
           clip-path: none;
           box-sizing: border-box;
+          padding: 0 6.25%;
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: center;
+          align-items: center;
         }
         &__title {
           font-size: 21px;
         }
         &__img {
           width: 66.666%;
+        }
+        &__description {
+          padding: 0;
         }
         &--even {
           .reason__intro {
@@ -218,12 +250,19 @@
         &--black {
           width: 33.333%;
           box-sizing: border-box;
+          padding-top: 50px;
+          &::before {
+            height: 0;
+          }
           .reason__title {
             font-size: 21px;
             width: 100%;
           }
           .reason__number {
             width: 100%;
+          }
+          .reason__description {
+            padding-bottom: 40px;
           }
         }
       }
@@ -237,28 +276,29 @@
         }
         &__item {
           width: 33.333%;
-          padding: 21% 6.25% 0;
+          padding: 160px 6.25% 0;
           box-sizing: border-box;
           text-align: center;
+          margin-bottom: 62px;
           &:before {
             background-repeat: no-repeat;
           }
           &1::before {
             width: 75px;
             height: 72px;
-            top: 23.43%;
+            top: 60px;
             left: calc(50% - 37.5px);
           }
           &2::before {
             width: 77px;
             height: 68px;
-            top: 22.26%;
+            top: 63px;
             left: calc(50% - 34px);
           }
           &3::before {
             width: 64px;
             height: 75px;
-            top: 25.6%;
+            top: 57px;
             left: calc(50% - 37.5px);
           }
         }
@@ -280,6 +320,24 @@
       &__button {
         margin-bottom: 40px;
       }
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .main {
+    .welcome-block {
+      clip-path: polygon(
+        21% 96%,
+        0 93%,
+        0 0,
+        100% 0,
+        100% 93%,
+        79% 96%,
+        79% 91%,
+        50% 100%,
+        21% 91%
+      );
     }
   }
 }

@@ -3,6 +3,7 @@
   text-transform: uppercase;
   padding: 39px 6.25% 30px;
   color: $black;
+  background-color: $white;
   &__title {
     @extend %font-size--21-26;
     @extend %font-PT--700;
@@ -55,11 +56,19 @@
       color: $black;
       @extend %font-PT--700;
       @extend %font-size--21-26;
+      @include transition--03(opacity);
+      &:hover,
+      &:focus {
+        opacity: 0.7;
+      }
+      &:active {
+        opacity: 0.3;
+      }
     }
   }
 }
 
-@media (min-width:$tablet) {
+@media (min-width: $tablet) {
   .footer {
     display: flex;
     flex-flow: row nowrap;

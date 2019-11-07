@@ -116,3 +116,13 @@
     }
   }
 }
+
+@media (min-width:$desktop) {
+  .main-nav {
+    .logo {
+      &__img {
+        width: 188px;
+      }
+    }
+  }
+}
