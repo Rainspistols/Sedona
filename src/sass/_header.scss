@@ -6,6 +6,30 @@
     text-align: center;
     display: flex;
     flex-flow: column nowrap;
+    position: relative;
+    &::after,
+    &::before {
+      content: '';
+      height: 4px;
+      width: 23px;
+      background-color: $white;
+      top: 27px;
+      right: 17px;
+      position: absolute;
+      &:hover,
+      &:focus {
+        opacity: 0.7;
+      }
+      &:active {
+        opacity: 0.3;
+      }
+    }
+    &::after {
+      transform: rotate(45deg);
+    }
+    &::before {
+      transform: rotate(-45deg);
+    }
   }
   &__item {
     background: $blue;
@@ -50,23 +74,21 @@
   }
   .sandwitch {
     width: 23px;
-    height: 21px;
+    height: 22px;
     background: transparent;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
     cursor: pointer;
-    div {
+    @include transition--03(opacity);
+    &__item {
       width: 23px;
       height: 4px;
       background: $blue;
-      @include transition--03(opacity);
+      box-shadow: 0 8px 0 0px $blue,0 16px 0 0px $blue ;
     }
-    &:hover div,
-    &:focus div {
+    &:hover ,
+    &:focus {
       opacity: 0.7;
     }
-    &:active div {
+    &:active {
       opacity: 0.3;
     }
   }
