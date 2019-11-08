@@ -10,13 +10,11 @@
     background-size: cover;
     height: 389px;
     background-color: #ac707c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &__text-img {
-      position: absolute;
       z-index: 2;
-      left: calc(50% - 141px);
-      top: calc(50% - 107px);
-      width: 282px;
-      height: 214px;
     }
   }
   .what-sedona {
@@ -178,6 +176,95 @@
   }
 }
 
+.main-photo {
+  .welcome-block {
+    height: 160px;
+    background-position-y: bottom;
+    position: relative;
+    margin-bottom: 40px;
+    &__text-img {
+      margin-bottom: 40px;
+    }
+  }
+  .photos {
+    &__title {
+      @extend %font-size--18-26;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 0 auto 32px;
+      color: $black;
+    }
+    &__description {
+      line-height: 24px;
+      margin: 0 auto 30px;
+      @extend %inner-padd--6;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .photo-block {
+      border-top: 1px solid #e5e5e5;
+      padding-top: 22px;
+      @extend %inner-padd--6;
+      &:last-child {
+        border-bottom: 1px solid #e5e5e5;
+      }
+      &__img {
+        width: 100%;
+        margin-bottom: 17px;
+        display: block;
+      }
+      &__name {
+        text-transform: uppercase;
+        line-height: 24px;
+        margin: 0 0 10px;
+      }
+      &__author {
+        line-height: 24px;
+        margin: 0 0 10px;
+      }
+      .likes {
+        line-height: 24px;
+        font-weight: bold;
+        display: flex;
+        margin-bottom: 20px;
+        cursor: pointer;
+        svg {
+          @include transition--03(all);
+          &:hover,
+          &:focus {
+            opacity: 0.5;
+          }
+          &:active {
+            transform: scale(1.4);
+          }
+        }
+        &__count {
+          margin: 0 0 0 15px;
+        }
+      }
+    }
+  }
+  .still-in-doubt {
+    text-align: center;
+    text-transform: uppercase;
+    &__title {
+      @extend %font-size--18-26;
+      @extend %inner-padd--6;
+    }
+    &__description {
+      @extend %inner-padd--6;
+      line-height: 24px;
+      margin: 0 0 35px;
+    }
+    &__video {
+      width: 100%;
+      height: 300px;
+      border: none;
+      margin-bottom: 30px;
+    }
+  }
+}
+
 @media (min-width: $tablet) {
   .main {
     .welcome-block {
@@ -195,12 +282,6 @@
         4% 89%
       );
       background-image: url('../img/back-desktop.jpg');
-      &__text-img {
-        width: 460px;
-        height: 350px;
-        left: calc(50% - 230px);
-        top: calc(50% - 180px);
-      }
     }
     .what-sedona {
       &__title {
@@ -322,6 +403,96 @@
       }
     }
   }
+  .main-photo {
+    .welcome-block {
+      height: 290px;
+      background-size: auto 200%;
+      clip-path: polygon(
+        4% 93%,
+        0 92%,
+        0 0,
+        100% 0,
+        100% 92%,
+        96% 93%,
+        96% 85%,
+        50% 100%,
+        4% 85%
+      );
+      margin-bottom: 75px;
+      &__text-img {
+        width: 458px;
+        height: 78px;
+        margin-bottom: 0;
+      }
+    }
+    .photos {
+      display: flex;
+      flex-flow: row wrap;
+      padding: 0 7.8%;
+      margin-bottom: 60px;
+      &__title {
+        font-size: 26px;
+        line-height: 30px;
+        width: 100%;
+      }
+      &__description {
+        margin-bottom: 60px;
+        width: 50%;
+      }
+      .photo-block {
+        padding: 0;
+        border: none;
+        position: relative;
+        margin-bottom: 0;
+        &:not(:first-of-type) {
+          width: 50%;
+          box-sizing: border-box;
+        }
+        &:first-of-type {
+          width: 100%;
+        }
+        &:nth-child(odd) {
+          background: #eaeaea;
+        }
+        &:nth-child(even) {
+          background: #f2f2f2;
+        }
+        &__img {
+          margin-bottom: 16px;
+        }
+        &__name {
+          padding-left: 20px;
+          font-size: 14px;
+          margin-bottom: 4px;
+        }
+        &__author {
+          padding-left: 20px;
+        }
+        .likes {
+          position: absolute;
+          right: 0;
+          bottom: 25px;
+          right: 30px;
+          margin: 0;
+        }
+      }
+    }
+    .still-in-doubt {
+      &__title {
+        font-size: 30px;
+      }
+      &__description {
+        width: 50%;
+        margin: 0 auto 60px;
+      }
+      &__video {
+        height: 500px;
+        padding-left: 7.8%;
+        padding-right: 7.8%;
+        box-sizing: border-box;
+      }
+    }
+  }
 }
 
 @media (min-width: $desktop) {
@@ -340,4 +511,61 @@
       );
     }
   }
+  .main-photo {
+    .welcome-block {
+      height: 300px;
+      clip-path: polygon(
+        21% 96%,
+        0px 90%,
+        0px 0px,
+        100% 0px,
+        100% 90%,
+        79% 96%,
+        79% 85%,
+        50% 100%,
+        21% 85%
+      );
+      margin-bottom: 100px;
+    }
+    .photos {
+      .photo-block {
+        &:not(:first-of-type) {
+          width: 33.33%;
+          box-sizing: border-box;
+        }
+        &__img {
+          margin-bottom: 0;
+        }
+        &__content-block {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          background: rgba($color: $black, $alpha: 0.3);
+          width: 100%;
+          color: $white;
+          padding-top: 10px;
+          .likes {
+            &__icon {
+              path {
+                fill:$white;
+              }
+            }
+          }
+        }
+      }
+    }
+    .still-in-doubt {
+      padding: 0;
+      &__title,
+      &__description {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      &__video {
+        width: 800px;
+      }
+    }
+  }
+  
 }
