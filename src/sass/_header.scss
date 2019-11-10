@@ -7,30 +7,6 @@
     display: flex;
     flex-flow: column nowrap;
     position: relative;
-    &::after,
-    &::before {
-      content: '';
-      height: 4px;
-      width: 23px;
-      background-color: $white;
-      top: 27px;
-      right: 17px;
-      position: absolute;
-      cursor: pointer;
-      &:hover,
-      &:focus {
-        opacity: 0.7;
-      }
-      &:active {
-        opacity: 0.3;
-      }
-    }
-    &::after {
-      transform: rotate(45deg);
-    }
-    &::before {
-      transform: rotate(-45deg);
-    }
   }
   &__item {
     text-transform: uppercase;
