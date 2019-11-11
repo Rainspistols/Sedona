@@ -130,7 +130,7 @@ body {
   background-position: center;
   background-size: cover;
   height: 389px;
-  background-color: #ac707c;
+  background-color: #2B4449;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -464,6 +464,17 @@ body {
     margin-bottom: 55px;
     clip-path: polygon(4% 93%, 0 92%, 0 0, 100% 0, 100% 92%, 96% 93%, 96% 89%, 50% 100%, 4% 89%);
     background-image: url("../img/back-desktop.jpg"); }
+    .main .welcome-block__text-img {
+      width: 460px; }
+  .main .welcome-block--short {
+    height: 290px;
+    background-size: auto 200%;
+    clip-path: polygon(4% 93%, 0 92%, 0 0, 100% 0, 100% 92%, 96% 93%, 96% 85%, 50% 100%, 4% 85%);
+    margin-bottom: 75px; }
+    .main .welcome-block--short .welcome-block__text-img {
+      width: 458px;
+      height: 78px;
+      margin-bottom: 0; }
   .main .page-description {
     margin: auto; }
     .main .page-description__title {
@@ -554,61 +565,52 @@ body {
       margin-bottom: 30px; }
     .main .find-a-hotel__button {
       margin-bottom: 40px; }
-  .welcome-block--short {
-    height: 290px;
-    background-size: auto 200%;
-    clip-path: polygon(4% 93%, 0 92%, 0 0, 100% 0, 100% 92%, 96% 93%, 96% 85%, 50% 100%, 4% 85%);
-    margin-bottom: 75px; }
-    .welcome-block--short .welcome-block__text-img {
-      width: 458px;
-      height: 78px;
-      margin-bottom: 0; }
-  .photos {
+  .main .photos {
     display: flex;
     flex-flow: row wrap;
     padding: 0 7.8%;
     margin-bottom: 60px; }
-    .photos__title {
+    .main .photos__title {
       font-size: 26px;
       line-height: 30px;
       width: 100%; }
-    .photos__description {
+    .main .photos__description {
       margin-bottom: 60px;
       width: 50%; }
-    .photos .photo-block {
+    .main .photos .photo-block {
       padding: 0 !important;
       border: none;
       position: relative;
       margin-bottom: 0; }
-      .photos .photo-block:not(:first-of-type) {
+      .main .photos .photo-block:not(:first-of-type) {
         width: 50%;
         box-sizing: border-box; }
-      .photos .photo-block:first-of-type {
+      .main .photos .photo-block:first-of-type {
         width: 100%; }
-      .photos .photo-block:nth-child(odd) {
+      .main .photos .photo-block:nth-child(odd) {
         background: #eaeaea; }
-      .photos .photo-block:nth-child(even) {
+      .main .photos .photo-block:nth-child(even) {
         background: #f2f2f2; }
-      .photos .photo-block__img {
+      .main .photos .photo-block__img {
         margin-bottom: 16px; }
-      .photos .photo-block__name {
+      .main .photos .photo-block__name {
         padding-left: 20px;
         font-size: 14px;
         margin-bottom: 4px; }
-      .photos .photo-block__author {
+      .main .photos .photo-block__author {
         padding-left: 20px; }
-      .photos .photo-block .likes {
+      .main .photos .photo-block .likes {
         position: absolute;
         right: 0;
-        bottom: 25px;
+        bottom: 28px;
         right: 30px;
-        margin: 0; }
-  .still-in-doubt__title {
+        margin-bottom: 0; }
+  .main .still-in-doubt__title {
     font-size: 30px; }
-  .still-in-doubt__description {
+  .main .still-in-doubt__description {
     width: 50%;
     margin: 0 auto 60px; }
-  .still-in-doubt__video {
+  .main .still-in-doubt__video {
     height: 500px;
     padding-left: 7.8%;
     padding-right: 7.8%;
@@ -620,7 +622,7 @@ body {
   .review__form {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center; }
   .review__block {
     border: none;
@@ -648,7 +650,7 @@ body {
     padding: 0 7.8%;
     flex-flow: row wrap;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-bottom: 50px; }
     .review__attractions-block .review__title {
       width: 100%; }
@@ -768,7 +770,6 @@ body {
     margin-left: 10%;
     width: calc(50% - 10%); }
   .main .welcome-block {
-    height: 300px;
     clip-path: polygon(21% 96%, 0px 90%, 0px 0px, 100% 0px, 100% 90%, 79% 96%, 79% 85%, 50% 100%, 21% 85%);
     margin-bottom: 100px; }
   .main .photos .photo-block:not(:first-of-type) {

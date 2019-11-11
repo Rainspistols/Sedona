@@ -92,8 +92,6 @@ function sassFunc() {
     .pipe(browserSync.stream());
 }
 
-
-
 exports.watch = watchFunc;
 exports.copy = copyToDocs;
 exports.clean = cleanUp;

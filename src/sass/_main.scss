@@ -10,7 +10,7 @@
   background-position: center;
   background-size: cover;
   height: 389px;
-  background-color: #ac707c;
+  background-color: #2B4449;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -460,6 +460,30 @@
         4% 89%
       );
       background-image: url('../img/back-desktop.jpg');
+      &__text-img {
+        width: 460px;
+      }
+    }
+    .welcome-block--short {
+      height: 290px;
+      background-size: auto 200%;
+      clip-path: polygon(
+        4% 93%,
+        0 92%,
+        0 0,
+        100% 0,
+        100% 92%,
+        96% 93%,
+        96% 85%,
+        50% 100%,
+        4% 85%
+      );
+      margin-bottom: 75px;
+      .welcome-block__text-img {
+        width: 458px;
+        height: 78px;
+        margin-bottom: 0;
+      }
     }
     .page-description {
       margin: auto;
@@ -582,93 +606,72 @@
         margin-bottom: 40px;
       }
     }
-  }
-  .welcome-block--short {
-    height: 290px;
-    background-size: auto 200%;
-    clip-path: polygon(
-      4% 93%,
-      0 92%,
-      0 0,
-      100% 0,
-      100% 92%,
-      96% 93%,
-      96% 85%,
-      50% 100%,
-      4% 85%
-    );
-    margin-bottom: 75px;
-    .welcome-block__text-img {
-      width: 458px;
-      height: 78px;
-      margin-bottom: 0;
-    }
-  }
-  .photos {
-    display: flex;
-    flex-flow: row wrap;
-    padding: 0 7.8%;
-    margin-bottom: 60px;
-    &__title {
-      font-size: 26px;
-      line-height: 30px;
-      width: 100%;
-    }
-    &__description {
+    .photos {
+      display: flex;
+      flex-flow: row wrap;
+      padding: 0 7.8%;
       margin-bottom: 60px;
-      width: 50%;
-    }
-    .photo-block {
-      padding: 0 !important;
-      border: none;
-      position: relative;
-      margin-bottom: 0;
-      &:not(:first-of-type) {
-        width: 50%;
-        box-sizing: border-box;
-      }
-      &:first-of-type {
+      &__title {
+        font-size: 26px;
+        line-height: 30px;
         width: 100%;
       }
-      &:nth-child(odd) {
-        background: #eaeaea;
+      &__description {
+        margin-bottom: 60px;
+        width: 50%;
       }
-      &:nth-child(even) {
-        background: #f2f2f2;
-      }
-      &__img {
-        margin-bottom: 16px;
-      }
-      &__name {
-        padding-left: 20px;
-        font-size: 14px;
-        margin-bottom: 4px;
-      }
-      &__author {
-        padding-left: 20px;
-      }
-      .likes {
-        position: absolute;
-        right: 0;
-        bottom: 25px;
-        right: 30px;
-        margin: 0;
+      .photo-block {
+        padding: 0 !important;
+        border: none;
+        position: relative;
+        margin-bottom: 0;
+        &:not(:first-of-type) {
+          width: 50%;
+          box-sizing: border-box;
+        }
+        &:first-of-type {
+          width: 100%;
+        }
+        &:nth-child(odd) {
+          background: #eaeaea;
+        }
+        &:nth-child(even) {
+          background: #f2f2f2;
+        }
+        &__img {
+          margin-bottom: 16px;
+        }
+        &__name {
+          padding-left: 20px;
+          font-size: 14px;
+          margin-bottom: 4px;
+        }
+        &__author {
+          padding-left: 20px;
+        }
+        .likes {
+          position: absolute;
+          right: 0;
+          bottom: 28px;
+          right: 30px;
+          margin-bottom: 0;
+        }
       }
     }
-  }
-  .still-in-doubt {
-    &__title {
-      font-size: 30px;
-    }
-    &__description {
-      width: 50%;
-      margin: 0 auto 60px;
-    }
-    &__video {
-      height: 500px;
-      padding-left: 7.8%;
-      padding-right: 7.8%;
-      box-sizing: border-box;
+    .still-in-doubt {
+      &__title {
+        font-size: 30px;
+      }
+      &__description {
+        width: 50%;
+        margin: 0 auto 60px;
+      }
+      &__video {
+        height: 500px;
+        padding-left: 7.8%;
+        padding-right: 7.8%;
+        box-sizing: border-box;
+      }
     }
   }
   .review {
@@ -680,7 +683,7 @@
     &__form {
       display: flex;
       flex-flow: row wrap;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
     }
     &__block {
@@ -716,7 +719,7 @@
       padding: 0 7.8%;
       flex-flow: row wrap;
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
       margin-bottom: 50px;
       .review__title {
         width: 100%;
@@ -889,7 +892,6 @@
   }
   .main {
     .welcome-block {
-      height: 300px;
       clip-path: polygon(
         21% 96%,
         0px 90%,
