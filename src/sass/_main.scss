@@ -10,7 +10,7 @@
   background-position: center;
   background-size: cover;
   height: 389px;
-  background-color: #2B4449;
+  background-color: #2b4449;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -717,10 +717,12 @@
       order: 4;
       width: 100%;
       padding: 0 7.8%;
-      flex-flow: row wrap;
-      display: flex;
-      justify-content: center;
       margin-bottom: 50px;
+      div {
+        flex-flow: row wrap;
+        display: flex;
+        justify-content: center;
+      }
       .review__title {
         width: 100%;
       }
@@ -836,12 +838,14 @@
         }
       }
       &__contact-block {
-        display: flex;
-        flex-flow: row wrap;
         padding-left: 10%;
         padding-right: 10%;
         margin-bottom: 90px;
-        justify-content: space-between;
+        div {
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-between;
+        }
         &::before {
           top: 0;
         }
@@ -869,7 +873,9 @@
         width: 100%;
         padding-left: 10%;
         padding-right: 10%;
-        flex-flow: row wrap;
+        div {
+          flex-flow: row wrap;
+        }
         .review__title {
           margin-bottom: 70px;
         }
