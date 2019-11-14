@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -39,9 +39,13 @@
                     srcset="../img/logotype-tablet.svg"
                     media="(min-width: 768px)"
                   />
+                  <source
+                    type="image/webp"
+                    srcset="../img/logotype-mobile.svg.webp"
+                  />
                   <img
                     class="logo__img"
-                    src="../img/logotype-mobile.svg"
+                    src="../img/logotype-mobile.svg.png"
                     alt="logotype"
                   />
                 </picture>
@@ -59,9 +63,15 @@
         <div class="welcome-block welcome-block--short">
           <picture>
             <source
+              type="image/webp"
+              media="(min-width: 768px)"
+              srcset="../img/SEDONAdesktop.webp"
+            />
+            <source
               srcset="../img/SEDONAdesktop.png"
               media="(min-width: 768px)"
             />
+            <source type="image/webp" srcset="../img/SEDONA.webp" />
             <img
               src="../img/SEDONA.png"
               alt="welcome to Sedona"
@@ -295,5 +305,7 @@
         </div>
       </footer>
     </div>
+
+    <script src="./main.bundle.js"></script>
   </body>
 </html>

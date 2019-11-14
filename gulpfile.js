@@ -9,6 +9,9 @@ const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const webpackStream = require('webpack-stream');
 const htmlmin = require('gulp-htmlmin');
+const imagemin = require('gulp-imagemin');
+const webp = require('imagemin-webp');
+const extReplace = require('gulp-ext-replace');
 
 const CONFIG = {
   src: {
@@ -16,6 +19,7 @@ const CONFIG = {
     sass: './src/sass/**/*.scss',
     images: './src/img/**/*.*',
     html: './src/**/*.html',
+    pngJpeg: './src/img/*.{jpg,png}',
   },
   docs: {
     base: './docs/',
@@ -69,7 +73,23 @@ function templateTask(done) {
 }
 
 function imagesTask(done) {
-  src(CONFIG.src.images).pipe(dest(CONFIG.docs.images));
+  src(CONFIG.src.images)
+    .pipe(imagemin())
+    .pipe(dest(CONFIG.docs.images));
+  done();
+}
+
+function imagesTaskWebp(done) {
+  src(CONFIG.src.pngJpeg)
+    .pipe(
+      imagemin([
+        webp({
+          quality: 75,
+        }),
+      ])
+    )
+    .pipe(extReplace('.webp'))
+    .pipe(dest(CONFIG.docs.images));
   done();
 }
 
@@ -103,10 +123,11 @@ exports.dev = parallel(
   cssTask,
   templateTask,
   imagesTask,
+  imagesTaskWebp,
   watchChanges,
   liveReload
 );
 exports.build = series(
   cleanUp,
-  parallel(jsTask, cssTask, imagesTask, templateTask)
+  parallel(jsTask, cssTask, imagesTask, imagesTaskWebp, templateTask)
 );

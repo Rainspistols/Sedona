@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -39,9 +39,13 @@
                     srcset="../img/logotype-tablet.svg"
                     media="(min-width: 768px)"
                   />
+                  <source
+                    type="image/webp"
+                    srcset="../img/logotype-mobile.svg.webp"
+                  />
                   <img
                     class="logo__img"
-                    src="../img/logotype-mobile.svg"
+                    src="../img/logotype-mobile.svg.png"
                     alt="logotype"
                   />
                 </picture>
@@ -58,9 +62,15 @@
         <div class="welcome-block welcome-block--short">
           <picture>
             <source
+              type="image/webp"
+              media="(min-width: 768px)"
+              srcset="../img/SEDONAdesktop.webp"
+            />
+            <source
               srcset="../img/SEDONAdesktop.png"
               media="(min-width: 768px)"
             />
+            <source type="image/webp" srcset="../img/SEDONA.webp" />
             <img
               src="../img/SEDONA.png"
               alt="welcome to Sedona"
@@ -79,13 +89,24 @@
           <article class="photo-block">
             <picture>
               <source
+                type="image/webp"
+                media="(min-width: 1200px)"
+                srcset="../img/photo-1-desktop.webp"
+              />
+              <source
                 srcset="../img/photo-1-desktop.jpg"
                 media="(min-width: 1200px)"
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="../img/photo-1-tablet.webp"
               />
               <source
                 srcset="../img/photo-1-tablet.jpg"
                 media="(min-width: 768px)"
               />
+              <source type="image/webp" srcset="../img/photo-1-mobile.webp" />
               <img
                 src="../img/photo-1-mobile.jpg"
                 alt="non-native open spaces"
@@ -114,13 +135,24 @@
           <article class="photo-block">
             <picture>
               <source
+                type="image/webp"
+                media="(min-width: 1200px)"
+                srcset="../img/photo-2-desktop.webp"
+              />
+              <source
                 srcset="../img/photo-2-desktop.jpg"
                 media="(min-width: 1200px)"
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="../img/photo-2-tablet.webp"
               />
               <source
                 srcset="../img/photo-2-tablet.jpg"
                 media="(min-width: 768px)"
               />
+              <source type="image/webp" srcset="../img/photo-2-mobile.webp" />
               <img
                 src="../img/photo-2-mobile.jpg"
                 alt="non-native open spaces"
@@ -149,13 +181,24 @@
           <article class="photo-block">
             <picture>
               <source
+                type="image/webp"
+                media="(min-width: 1200px)"
+                srcset="../img/photo-3-desktop.webp"
+              />
+              <source
                 srcset="../img/photo-3-desktop.jpg"
                 media="(min-width: 1200px)"
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="../img/photo-3-tablet.webp"
               />
               <source
                 srcset="../img/photo-3-tablet.jpg"
                 media="(min-width: 768px)"
               />
+              <source type="image/webp" srcset="../img/photo-3-mobile.webp" />
               <img
                 src="../img/photo-3-mobile.jpg"
                 alt="Road north"
@@ -184,13 +227,24 @@
           <article class="photo-block">
             <picture>
               <source
+                type="image/webp"
+                media="(min-width: 1200px)"
+                srcset="../img/photo-4-desktop.webp"
+              />
+              <source
                 srcset="../img/photo-4-desktop.jpg"
                 media="(min-width: 1200px)"
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="../img/photo-4-tablet.webp"
               />
               <source
                 srcset="../img/photo-4-tablet.jpg"
                 media="(min-width: 768px)"
               />
+              <source type="image/webp" srcset="../img/photo-4-mobile.webp" />
               <img
                 src="../img/photo-4-mobile.jpg"
                 alt="Bridge of the devil"
@@ -286,5 +340,7 @@
         </div>
       </footer>
     </div>
+
+    <script src="./main.bundle.js"></script>
   </body>
 </html>
