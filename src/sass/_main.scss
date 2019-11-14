@@ -5,7 +5,7 @@
   position: relative;
   margin: 0 0 30px;
   clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
-  background-image: url('../img/back-mobile.jpg');
+  background-image: url('./img/back-mobile.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -72,10 +72,10 @@
       background-color: #818979;
     }
     &__img1 {
-      background-image: url('../img/photo-city@1x.jpg');
+      background-image: url('./img/photo-city@1x.jpg');
     }
     &__img2 {
-      background-image: url('../img/photo-bridge@1x.jpg');
+      background-image: url('./img/photo-bridge@1x.jpg');
     }
     &__intro--square {
       clip-path: none;
@@ -323,7 +323,7 @@
         content: '';
         width: 18px;
         height: 18px;
-        background-image: url('../img/phone.svg');
+        background-image: url('./img/phone.svg');
         right: 19px;
         bottom: 20px;
         position: absolute;
@@ -333,7 +333,7 @@
         content: '';
         width: 16px;
         height: 16px;
-        background-image: url('../img/mail.svg');
+        background-image: url('./img/mail.svg');
         right: 21px;
         bottom: 23px;
         position: absolute;
@@ -459,7 +459,7 @@
         50% 100%,
         4% 89%
       );
-      background-image: url('../img/back-desktop.jpg');
+      background-image: url('./img/back-desktop.jpg');
       &__text-img {
         width: 460px;
       }

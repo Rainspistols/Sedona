@@ -28,6 +28,7 @@
     "webpack-stream": "^5.2.1"
   },
   "dependencies": {
-    "babel-loader": "^8.0.6"
+    "babel-loader": "^8.0.6",
+    "gulp-htmlmin": "^5.0.1"
   }
 }
