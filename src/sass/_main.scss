@@ -26,12 +26,11 @@
     }
   }
 }
-.no-webp .welcome-block,
-.no-js .welcome-block {
-  background-image: url('./img/back-mobile.jpg');
-}
-.webp .welcome-block {
+.welcome-block {
   background-image: url('./img/back-mobile.webp');
+}
+.no-webp .welcome-block {
+  background-image: url('./img/back-mobile.jpg');
 }
 .what-sedona {
   margin: 0;
@@ -99,20 +98,18 @@
     }
   }
 }
-.no-webp .reason__img1,
-.no-js .reason__img1 {
-  background-image: url('./img/photo-city@1x.jpg');
-}
-.webp .reason__img1 {
+.reason__img1 {
   background-image: url('./img/photo-city@1x.webp');
 }
-
-.no-webp .reason__img2,
-.no-js .reason__img2 {
-  background-image: url('./img/photo-bridge@1x.jpg');
+.no-webp .reason__img1 {
+  background-image: url('./img/photo-city@1x.jpg');
 }
-.webp .reason__img2 {
+
+.reason__img2 {
   background-image: url('./img/photo-bridge@1x.webp');
+}
+.no-webp .reason__img2 {
+  background-image: url('./img/photo-bridge@1x.jpg');
 }
 
 .reason--black {
@@ -478,12 +475,11 @@
       width: 460px;
     }
   }
-  .no-webp .welcome-block,
-  .no-js .welcome-block {
-    background-image: url('./img/back-desktop.jpg');
-  }
-  .webp .welcome-block {
+  .welcome-block {
     background-image: url('./img/back-desktop.webp');
+  }
+  .no-webp .welcome-block {
+    background-image: url('./img/back-desktop.jpg');
   }
   .welcome-block--short {
     height: 290px;
