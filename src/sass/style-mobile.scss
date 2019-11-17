@@ -1,15 +1,8 @@
-$mobile-only: 767px;
-$tablet: 768px;
-$tablet-only: 1199px;
-$desktop: 1200px;
-
-@import 'fonts';
-@import 'colors';
-@import 'other';
-@import 'header';
-@import 'main';
+@import 'base';
 @import 'button';
-@import 'footer';
+@import 'header-mobile';
+@import 'main-mobile';
+@import 'footer-mobile';
 
 body {
   margin: 0;

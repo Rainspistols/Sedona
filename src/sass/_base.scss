@@ -1,3 +1,6 @@
+$tablet: 768px;
+$desktop: 1200px;
+
 %inner-padd--6 {
   padding-left: 6.25%;
   padding-right: 6.25%;
@@ -6,3 +9,6 @@
 @mixin transition--03($prop) {
   transition: $prop 0.3s ease-out;
 }
+
+@import 'colors';
+@import 'fonts';

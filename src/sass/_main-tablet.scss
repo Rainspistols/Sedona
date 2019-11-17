@@ -1,0 +1,321 @@
+@media (min-width: $tablet) {
+  .welcome-block {
+    height: 518px;
+    margin-bottom: 55px;
+    clip-path: polygon(
+      4% 93%,
+      0 92%,
+      0 0,
+      100% 0,
+      100% 92%,
+      96% 93%,
+      96% 89%,
+      50% 100%,
+      4% 89%
+    );
+    &__text-img {
+      width: 460px;
+    }
+  }
+  .welcome-block {
+    background-image: url('./img/back-desktop.webp');
+  }
+  .no-webp .welcome-block {
+    background-image: url('./img/back-desktop.jpg');
+  }
+  .welcome-block--short {
+    height: 290px;
+    background-size: auto 200%;
+    clip-path: polygon(
+      4% 93%,
+      0 92%,
+      0 0,
+      100% 0,
+      100% 92%,
+      96% 93%,
+      96% 85%,
+      50% 100%,
+      4% 85%
+    );
+    margin-bottom: 75px;
+    .welcome-block__text-img {
+      width: 458px;
+      height: 78px;
+      margin-bottom: 0;
+    }
+  }
+  .page-description {
+    margin: auto;
+    &__title {
+      font-size: 21px;
+    }
+    &__text {
+      margin: 0 auto 50px;
+      width: 60%;
+    }
+  }
+  .reasons {
+    display: flex;
+    flex-wrap: wrap;
+    .reason {
+      display: flex;
+      flex-flow: row wrap;
+      width: 100%;
+      &__intro-and-img {
+        width: 100%;
+      }
+      &__intro {
+        width: 33.333%;
+        clip-path: none;
+        box-sizing: border-box;
+        padding: 0 6.25%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+      }
+      &__title {
+        font-size: 21px;
+      }
+      &__img {
+        width: 66.666%;
+      }
+      &__description {
+        padding: 0;
+      }
+      &--even {
+        .reason__intro {
+          order: 2;
+        }
+        .reason__img {
+          order: 1;
+        }
+      }
+      &--black {
+        width: 33.333%;
+        box-sizing: border-box;
+        padding-top: 50px;
+        &::before {
+          height: 0;
+        }
+        .reason__title {
+          font-size: 21px;
+          width: 100%;
+        }
+        .reason__number {
+          width: 100%;
+        }
+        .reason__description {
+          padding-bottom: 40px;
+        }
+      }
+    }
+    .sub-reason {
+      width: 100%;
+      &__list {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        padding: 0;
+      }
+      &__item {
+        width: 33.333%;
+        padding: 160px 6.25% 0;
+        box-sizing: border-box;
+        text-align: center;
+        margin-bottom: 62px;
+        &:before {
+          background-repeat: no-repeat;
+        }
+        &1::before {
+          width: 75px;
+          height: 72px;
+          top: 60px;
+          left: calc(50% - 37.5px);
+        }
+        &2::before {
+          width: 77px;
+          height: 68px;
+          top: 63px;
+          left: calc(50% - 34px);
+        }
+        &3::before {
+          width: 64px;
+          height: 75px;
+          top: 57px;
+          left: calc(50% - 37.5px);
+        }
+      }
+      &__title {
+        font-size: 21px;
+        margin-bottom: 26px;
+      }
+    }
+  }
+  .find-a-hotel {
+    padding: 58px 20.31% 0;
+    &__title {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+    &__description {
+      margin-bottom: 30px;
+    }
+    &__button {
+      margin-bottom: 40px;
+    }
+
+    .photos {
+      display: flex;
+      flex-flow: row wrap;
+      padding: 0 7.8%;
+      margin-bottom: 60px;
+      &__title {
+        font-size: 26px;
+        line-height: 30px;
+        width: 100%;
+      }
+      &__description {
+        margin-bottom: 60px;
+        width: 50%;
+      }
+      .photo-block {
+        padding: 0 !important;
+        border: none;
+        position: relative;
+        margin-bottom: 0;
+        &:not(:first-of-type) {
+          width: 50%;
+          box-sizing: border-box;
+        }
+        &:first-of-type {
+          width: 100%;
+        }
+        &:nth-child(odd) {
+          background: #eaeaea;
+        }
+        &:nth-child(even) {
+          background: #f2f2f2;
+        }
+        &__img {
+          margin-bottom: 16px;
+        }
+        &__name {
+          padding-left: 20px;
+          font-size: 14px;
+          margin-bottom: 4px;
+        }
+        &__author {
+          padding-left: 20px;
+        }
+        .likes {
+          position: absolute;
+          right: 0;
+          bottom: 28px;
+          right: 30px;
+          margin-bottom: 0;
+        }
+      }
+    }
+    .still-in-doubt {
+      &__title {
+        font-size: 30px;
+      }
+      &__description {
+        width: 50%;
+        margin: 0 auto 60px;
+      }
+      &__video {
+        height: 500px;
+        padding-left: 7.8%;
+        padding-right: 7.8%;
+        box-sizing: border-box;
+      }
+    }
+  }
+  .review {
+    &__title {
+      position: relative;
+      margin-top: -13px;
+      font-size: 21px;
+    }
+    &__form {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      align-items: center;
+    }
+    &__block {
+      border: none;
+      position: relative;
+      margin-bottom: 70px;
+    }
+    &__impression-block {
+      order: 1;
+      padding: 0 0 0 7.8%;
+      .review__label {
+        margin-bottom: 52px;
+        &:last-of-type {
+          margin-bottom: 20px;
+        }
+      }
+      .review__title {
+        margin-bottom: 42px;
+      }
+    }
+    &__name-block {
+      order: 2;
+      padding: 0 7.8% 0 0;
+    }
+    &__contact-block {
+      order: 3;
+      width: 100%;
+      padding: 0 7.8% 0;
+    }
+    &__attractions-block {
+      order: 4;
+      width: 100%;
+      padding: 0 7.8%;
+      margin-bottom: 50px;
+      div {
+        flex-flow: row wrap;
+        display: flex;
+        justify-content: center;
+      }
+      .review__title {
+        width: 100%;
+      }
+      .review__label {
+        width: 35%;
+        box-sizing: border-box;
+        display: flex;
+      }
+    }
+    &__emotions-block {
+      width: 100%;
+      order: 5;
+      padding: 20px 7.8% 0;
+      margin-bottom: 50px;
+    }
+    .review__button {
+      order: 6;
+      width: calc(50% - 7.8%);
+      padding: 0;
+      margin: 0 auto 80px 7.8%;
+      box-sizing: border-box;
+      position: relative;
+      &::after {
+        content: '* - required fields';
+        right: -100%;
+        top: 17px;
+        position: absolute;
+        color: $grey;
+        font-family: 'PT Sans', 'Arial', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 26px;
+        pointer-events: none;
+      }
+    }
+  }
+}
