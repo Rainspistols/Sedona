@@ -149,7 +149,12 @@
       margin-bottom: 100px;
     }
     .photos {
+      display: flex;
+      flex-flow: row wrap;
       .photo-block {
+        padding: 0;
+        position: relative;
+        border: none;
         &:not(:first-of-type) {
           width: 33.33%;
           box-sizing: border-box;
@@ -165,6 +170,8 @@
           width: 100%;
           color: $white;
           padding-top: 10px;
+          padding-left: 30px;
+          box-sizing: border-box;
           .likes {
             &__icon {
               path {

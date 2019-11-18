@@ -242,13 +242,13 @@
         margin-bottom: 20px;
         cursor: pointer;
         svg {
-          @include transition--03(all);
+          transition: all 0.1s ease;
           &:hover,
           &:focus {
             opacity: 0.5;
           }
           &:active {
-            transform: scale(1.4);
+            transform: scale(1.8);
           }
         }
         &__count {
@@ -383,6 +383,7 @@
       @extend %font-PT--700;
       margin-bottom: 45px;
       position: relative;
+      box-sizing: border-box;
       input:checked ~ .review__checkbox:after {
         display: block;
       }
