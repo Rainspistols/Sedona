@@ -40,5 +40,10 @@
     .sandwitch {
       display: none;
     }
+    &.js-none {
+      li:nth-child(-n + 4) {
+        height: auto;
+      }
+    }
   }
 }

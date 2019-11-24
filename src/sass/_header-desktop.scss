@@ -5,5 +5,10 @@
         width: 188px;
       }
     }
+    &.js-none {
+      li:nth-child(-n + 4) {
+        height: auto;
+      }
+    }
   }
 }

@@ -93,20 +93,19 @@
       pointer-events: none;
     }
   }
-}
 
-// js use only //
-.js-block {
-  li:nth-child(-n + 4) {
-    display: block;
-    transition: all 0.5s;
+  &.js-block {
+    li:nth-child(-n + 4) {
+      display: block;
+      transition: all 0.5s;
+    }
   }
-}
 
-.js-none {
-  li:nth-child(-n + 4) {
-    height: 0;
-    overflow: hidden;
-    border: none;
+  &.js-none {
+    li:nth-child(-n + 4) {
+      height: 0;
+      overflow: hidden;
+      border: none;
+    }
   }
 }
