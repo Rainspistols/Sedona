@@ -51,7 +51,7 @@
   <body>
     <div class="all-content-container">
       <header>
-        <nav class="main-nav">
+        <nav class="main-nav js-none">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item1">
               <a class="main-nav__link">Main</a>
@@ -65,7 +65,12 @@
               <a href="pages/form.html" class="main-nav__link">Feedback form</a>
             </li>
             <li class="main-nav__item main-nav__item4">
-              <a href="byteserker.com" class="main-nav__link">Byteserker</a>
+              <a
+                href="https://rainspistols.github.io/Byteserker/"
+                class="main-nav__link"
+                target="_blank"
+                >Byteserker</a
+              >
             </li>
             <li class="logo">
               <a class="logo__link">
@@ -89,11 +94,15 @@
                   />
                 </picture>
               </a>
-              <div class="logo__sandwitch sandwitch">
-                <div class="sandwitch__item1"></div>
-                <div class="sandwitch__item2"></div>
-                <div class="sandwitch__item3"></div>
-              </div>
+
+              <button
+                class="logo__sandwitch sandwitch"
+                aria-label="on open menu"
+              >
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
             </li>
           </ul>
         </nav>
@@ -208,6 +217,7 @@
         <iframe
           aria-label="Sedona on map"
           class="map"
+          id="map"
           src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d329507.9759175186!2d-111.75756721341827!3d35.034812580668074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2spl!4v1572896646342!5m2!1sru!2spl"
           height="350"
           style="border:0;"
@@ -275,6 +285,9 @@
       </footer>
     </div>
 
+<!--    <script-->
+<!--      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAx1FL-fb8HbCcoFsB4mRW1U7TtM4h7yp8"-->
+<!--    ></script>-->
     <script src="./main.bundle.js" async></script>
   </body>
 </html>

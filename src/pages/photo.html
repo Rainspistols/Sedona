@@ -51,7 +51,7 @@
   <body>
     <div class="all-content-container">
       <header>
-        <nav class="main-nav">
+        <nav class="main-nav js-none">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item1">
               <a href="../index.html" class="main-nav__link">Main</a>
@@ -63,7 +63,12 @@
               <a href="form.html" class="main-nav__link">Feedback form</a>
             </li>
             <li class="main-nav__item main-nav__item4">
-              <a href="byteserker.com" class="main-nav__link">Byteserker</a>
+              <a
+                href="https://rainspistols.github.io/Byteserker/"
+                class="main-nav__link"
+                target="_blank"
+                >Byteserker</a
+              >
             </li>
             <li class="logo">
               <a class="logo__link">
@@ -87,9 +92,14 @@
                   />
                 </picture>
               </a>
-              <div class="logo__sandwitch sandwitch">
-                <div class="sandwitch__item"></div>
-              </div>
+              <button
+                class="logo__sandwitch sandwitch"
+                aria-label="on open menu"
+              >
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
             </li>
           </ul>
         </nav>

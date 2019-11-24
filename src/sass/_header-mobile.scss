@@ -52,23 +52,61 @@
     }
   }
   .sandwitch {
-    width: 23px;
-    height: 22px;
     background: transparent;
+    display: inline-flex;
+    flex-direction: column;
+    padding: 0;
+    border: none;
+    outline: none;
     cursor: pointer;
     @include transition--03(opacity);
-    &__item {
+    span {
+      pointer-events: none;
+      margin: 4px 0 0;
+      transition: 0.4s;
+      display: inline-flex;
       width: 23px;
       height: 4px;
       background: $blue;
-      box-shadow: 0 8px 0 0px $blue, 0 16px 0 0px $blue;
+    }
+    &.active {
+      opacity: 0.3;
+      position: fixed;
+      span {
+        background: $white;
+        &:nth-child(1) {
+          transform: rotate(-45deg) translate(-8px, 4px);
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:nth-child(3) {
+          transform: rotate(45deg) translate(-7px, -4px);
+        }
+      }
     }
     &:hover,
     &:focus {
       opacity: 0.7;
     }
-    &:active {
-      opacity: 0.3;
+    * {
+      pointer-events: none;
     }
+  }
+}
+
+// js use only //
+.js-block {
+  li:nth-child(-n + 4) {
+    display: block;
+    transition: all 0.5s;
+  }
+}
+
+.js-none {
+  li:nth-child(-n + 4) {
+    height: 0;
+    overflow: hidden;
+    border: none;
   }
 }
